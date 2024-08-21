@@ -1,0 +1,43 @@
+@use "sass:math";
+
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+
+.spacer-17 {
+  display: block;
+  height: var(--spacing-17);
+}
+
+.spacer-13 {
+  display: block;
+  height: var(--spacing-13);
+}
+.spacer-15 {
+  display: block;
+  height: var(--spacing-15);
+}
+.spacer-11 {
+  display: block;
+  height: var(--spacing-11);
+}
+
+.mobile-hidden {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}

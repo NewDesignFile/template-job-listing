@@ -1,0 +1,13 @@
+:root {
+  --shadow-color: rgb(0 0 0 / 0.04);
+  --sh-content: 0px 0px 0px 1px var(--shadow-color),
+                0px 1px 1px -0.5px var(--shadow-color),
+                0px 3px 3px -1.5px var(--shadow-color), 
+                0px 6px 6px -3px var(--shadow-color),
+                0px 12px 12px -6px var(--shadow-color),
+                0px 24px 24px -12px var(--shadow-color);
+
+  --sh-nav: 0px 1px 1px -0.5px var(--shadow-color), 
+            0px 3px 3px -1.5px var(--shadow-color), 
+            0px 6px 6px -3px var(--shadow-color);
+}

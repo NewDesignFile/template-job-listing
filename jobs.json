@@ -1,0 +1,170 @@
+[
+  {
+    "category": "data-and-analytics",
+    "company": "Supabase",
+    "position": "Data Engineer",
+    "icon": "/assets/images/companies/supabase.svg",
+    "tags": ["DBT models", "Pulumi"],
+    "link": "https://boards.greenhouse.io/supabase/jobs"
+  },
+  {
+    "category": "engineering",
+    "company": "ShyftLabs",
+    "position": "Senior Data Engineer",
+    "icon": "/assets/images/companies/shyft.svg",
+    "tags": ["Full-time", "Python"],
+    "link": "mailto:gayatri@shyftlabs.io"
+  },
+  {
+    "category": "engineering",
+    "company": "Sticker Mule",
+    "position": "Site Reliability Engineer",
+    "icon": "/assets/images/companies/sticker.svg",
+    "tags": ["Docker", "Kubernetes"],
+    "link": "https://www.stickermule.com/"
+  },
+  {
+    "category": "design",
+    "company": "ShiftCare",
+    "position": "Product Designer",
+    "icon": "/assets/images/companies/shiftcare.svg",
+    "tags": ["Contract", "Mid Level"],
+    "link": "https://apply.workable.com/shiftcare/"
+  },
+  {
+    "category": "design",
+    "company": "Oliv AI",
+    "position": "Founding Product Designer",
+    "icon": "/assets/images/companies/oliv.svg",
+    "tags": ["Full-time", "Intermediate"],
+    "link": "https://www.comeet.com/jobs/"
+  },
+  {
+    "category": "engineering",
+    "company": "Deliveroo",
+    "position": "Engineering Manager, Salesforce",
+    "icon": "/assets/images/companies/deliveroo.svg",
+    "tags": ["Manager", "Senior"],
+    "link": "https://boards.greenhouse.io/deliveroo/jobs/"
+  },
+  {
+    "category": "operations",
+    "company": "Fresh Prints",
+    "position": "Junior Operations Associate",
+    "icon": "/assets/images/companies/fp.svg",
+    "tags": ["SaaS", "Operations"],
+    "link": "https://boards.greenhouse.io/freshprints/jobs/"
+  },  
+  {
+    "category": "hr-and-recruiting",
+    "company": "Apollo.io",
+    "position": "Sr. Technical Recruiter",
+    "icon": "/assets/images/companies/apollo.svg",
+    "tags": ["Manager", "Senior"],
+    "link": "https://boards.greenhouse.io/apolloio/jobs/"
+  },
+  {
+    "category": "devops-and-sysadmin",
+    "company": "Ancient Gaming",
+    "position": "Backend Test Engineer",
+    "icon": "/assets/images/companies/ancient-gaming.svg",
+    "tags": ["Node.js", "JavaScript"],
+    "link": "https://careers.ancient.gg/"
+  },
+  {
+    "category": "writing",
+    "company": "Duck Duck Go",
+    "position": "Senior UX Writer",
+    "icon": "/assets/images/companies/duck-duck-go.svg",
+    "tags": ["UX writing", "Copywriting"],
+    "link": "https://duckduckgo.recruitee.com/"
+  },
+  {
+    "category": "sales-and-partnerships",
+    "company": "Builder.io",
+    "position": "Sales Development Representative",
+    "icon": "/assets/images/companies/builder-io.svg",
+    "tags": ["Inbound", "Sales"],
+    "link": "https://boards.greenhouse.io/builder/jobs/"
+  },
+  {
+    "category": "design",
+    "company": "10up",
+    "position": "Senior Content Designer",
+    "icon": "/assets/images/companies/10up.svg",
+    "tags": ["UX content", "Research"],
+    "link": "https://jobs.lever.co/10up-2/"
+  },
+  {
+    "category": "sales-and-partnerships",
+    "company": "AssemblyAI",
+    "position": "Commercial Account Executive",
+    "icon": "/assets/images/companies/assemblyai.svg",
+    "tags": ["Sales", "Outbound"],
+    "link": "https://boards.greenhouse.io/assemblyai/jobs/"
+  },
+  {
+    "category": "engineering",
+    "company": "10up",
+    "position": "Senior Web Engineer",
+    "icon": "/assets/images/companies/10up.svg",
+    "tags": ["WordPress", "React.js"],
+    "link": "https://jobs.lever.co/10up-2/"
+  },
+  {
+    "category": "devops-and-sysadmin",
+    "company": "Canonical",
+    "position": "Microservices Engineer",
+    "icon": "/assets/images/companies/canonical.svg",
+    "tags": ["Architecture", "APIs"],
+    "link": "https://boards.greenhouse.io/canonical/jobs/"
+  },
+  {
+    "category": "product",
+    "company": "Jenzabar",
+    "position": "Senior Project Manager",
+    "icon": "/assets/images/companies/jenzabar.svg",
+    "tags": ["Planning", "Manager"],
+    "link": "https://boards.greenhouse.io/jenzabar/jobs/"
+  },
+  {
+    "category": "engineering",
+    "company": "Wikimedia",
+    "position": "Director of Engineering",
+    "icon": "/assets/images/companies/wikimedia.svg",
+    "tags": ["Developer Experience"],
+    "link": "https://boards.greenhouse.io/wikimedia/jobs/"
+  },
+  {
+    "category": "engineering",
+    "company": "Check",
+    "position": "Software Engineer",
+    "icon": "/assets/images/companies/check.svg",
+    "tags": ["Payments"],
+    "link": "https://boards.greenhouse.io/check/jobs/"
+  },
+  {
+    "category": "sales-and-partnerships",
+    "company": "Red Canary",
+    "position": "Senior Business Systems Analyst",
+    "icon": "/assets/images/companies/redcanary.svg",
+    "tags": ["Revenue", "Operations"],
+    "link": "https://jobs.lever.co/redcanary/"
+  },
+  {
+    "category": "data-and-analytics",
+    "company": "Sporty Group",
+    "position": "Senior Data Scientist",
+    "icon": "/assets/images/companies/placeholder.svg",
+    "tags": ["Apache Spark", "AWS"],
+    "link": "https://jobs.lever.co/sporty/"
+  },
+  {
+    "category": "product",
+    "company": "Wikimedia",
+    "position": "Group Product Manager",
+    "icon": "/assets/images/companies/wikimedia.svg",
+    "tags": ["Product direction", "Manager"],
+    "link": "https://boards.greenhouse.io/wikimedia/jobs/"
+  }
+]
