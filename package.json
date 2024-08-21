@@ -1,5 +1,5 @@
 {
-  "name": "job-listing",
+  "name": "@new-ui/job-listing",
   "version": "0.1.0",
   "private": true,
   "scripts": {

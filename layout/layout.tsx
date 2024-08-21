@@ -62,21 +62,21 @@ const Layout: FC<layoutInterface> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Remote India — Find your next work from home job.</title>
+        <title>Remote Jobs — Find your next work from home job.</title>
         <meta name="description" content="Find your next work from home job." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="@NewDesignFile" />
-        <meta property="og:title" content="Remote India" />
-        <meta property="og:url" content="https://remote-india.com" />
+        <meta property="og:title" content="Remote Jobs" />
+        <meta property="og:url" content="https://new-ui.com/templates/job-listing" />
         <meta property="og:type" content="website" />
 
 
         <meta property="og:image" content="" />
         <meta property="og:description" content="Find your next work from home job." />
-        <meta property="og:site_name" content="Remote India" />
+        <meta property="og:site_name" content="Remote Jobs" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="Find your next work from home job." />
-        <meta name="twitter:title" content="Remote India" />
+        <meta name="twitter:title" content="Remote Jobs" />
         <meta name="twitter:url" content="" />
         <meta name="twitter:description" content="Find your next work from home job." />
         <meta name="twitter:image" content="" />

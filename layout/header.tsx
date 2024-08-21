@@ -11,14 +11,14 @@ const Header = () => {
             <div className="desktop">
               <Image 
                 src="/assets/images/logo.svg"
-                alt="Remote India Logo"
+                alt="Remote Jobs Logo"
                 width={32}
                 height={32} />
               </div>
             <div className="mobile">
               <Image 
                 src="/assets/images/logo-small.svg"
-                alt="Remote India Logo"
+                alt="Remote Jobs Logo"
                 width={32}
                 height={32} />
             </div>
