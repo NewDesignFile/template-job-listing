@@ -1,4 +1,4 @@
-import React, { FC, useRef, useLayoutEffect } from 'react'
+import React, { FC, useRef, useEffect } from 'react'
 import Head from 'next/head'
 import Header from './header'
 
@@ -9,7 +9,7 @@ interface layoutInterface {
 const Layout: FC<layoutInterface> = ({ children }) => {
   const stickyHeader = useRef()
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const mainHeader = document.getElementById('site-header')
     const pageCTA = document.getElementById("page-cta")
 

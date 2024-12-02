@@ -28,7 +28,7 @@ const Header = () => {
       <ul>
         {}
         <li>
-          <a href="https://forms.gle/NLKBu8JU7JZHNKak9" target="_blank" className="btn btn--secondary">Post a Job</a>
+          <a href="https://new-ui.com/docs/templates/job-listing" target="_blank" className="btn btn--secondary">Post a Job</a>
         </li>
       </ul>
     </nav>

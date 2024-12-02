@@ -1,3 +1,27 @@
+:root {
+  --breakpoint-sm: 40em;
+  --breakpoint-md: 52em;
+  --breakpoint-lg: 64em;
+}
+
+@mixin breakpoint($point) {
+  @if $point == sm {
+    @media screen and (min-width: var(--breakpoint-sm)) {
+      @content;
+    }
+  }
+  @else if $point == md {
+    @media screen and (min-width: var(--breakpoint-md)) {
+      @content;
+    }
+  }
+  @else if $point == lg {
+    @media screen and (min-width: var(--breakpoint-lg)) {
+      @content;
+    }
+  }
+}
+
 .container {
   max-width: 816px;
   margin-inline: auto;
@@ -16,169 +40,116 @@
 
 .flex {
   display: flex;
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-wrap {
+    flex-wrap: wrap;
+  }
+
+  &-auto {
+    flex: 1 1 auto;
+    min-width: 0; 
+    min-height: 0;
+  }
+
+  &-none {
+    flex: none;
+  }
 }
 
-@media (--breakpoint-sm) {
+$alignments: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch
+);
+
+@each $name, $value in $alignments {
+  .items-#{$name} {
+    align-items: $value;
+  }
+
+  .self-#{$name} {
+    align-self: $value;
+  }
+}
+
+$justify-options: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly
+);
+
+@each $name, $value in $justify-options {
+  .justify-#{$name} {
+    justify-content: $value;
+  }
+}
+
+$content-options: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  stretch: stretch
+);
+
+@each $name, $value in $content-options {
+  .content-#{$name} {
+    align-content: $value;
+  }
+}
+
+@include breakpoint(sm) {
   .sm-flex {
     display: flex;
   }
 }
 
-@media (--breakpoint-md) {
+@include breakpoint(md) {
   .md-flex {
     display: flex;
   }
 }
 
-@media (--breakpoint-lg) {
+@include breakpoint(lg) {
   .lg-flex {
     display: flex;
   }
 }
 
-.flex-column {
-  flex-direction: column;
+.order {
+  @for $i from 0 through 3 {
+    &-#{$i} {
+      order: $i;
+    }
+  }
+
+  &-last {
+    order: 99999;
+  }
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.col {
+  &-4 {
+    flex: 4;
+    flex-grow: 100%;
+  }
+
+  &-8 {
+    flex: 8;
+    flex-grow: 100%;
+  }
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.items-baseline {
-  align-items: baseline;
-}
-
-.items-stretch {
-  align-items: stretch;
-}
-
-.self-start {
-  align-self: flex-start;
-}
-
-.self-end {
-  align-self: flex-end;
-}
-
-.self-center {
-  align-self: center;
-}
-
-.self-baseline {
-  align-self: baseline;
-}
-
-.self-stretch {
-  align-self: stretch;
-}
-
-.justify-start {
-  justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
-.content-start {
-  align-content: flex-start;
-}
-
-.content-end {
-  align-content: flex-end;
-}
-
-.content-center {
-  align-content: center;
-}
-
-.content-between {
-  align-content: space-between;
-}
-
-.content-around {
-  align-content: space-around;
-}
-
-.content-stretch {
-  align-content: stretch;
-}
-
-/* 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893 */
-.flex-auto {
-  flex: 1 1 auto;
-  min-width: 0;
-  /* 1 */
-  min-height: 0;
-  /* 1 */
-}
-
-.flex-none {
-  flex: none;
-}
-
-.order-0 {
-  order: 0;
-}
-
-.order-1 {
-  order: 1;
-}
-
-.order-2 {
-  order: 2;
-}
-
-.order-3 {
-  order: 3;
-}
-
-.order-last {
-  order: 99999;
-}
-
-:root {
-  --breakpoint-sm: (screen and min-width: 40em);
-  --breakpoint-md: (screen and min-width: 52em);
-  --breakpoint-lg: (screen and min-width: 64em);
-}
-
-.col-4 {
-  flex: 4;
-  flex-grow: 100%;
-}
-.col-8 {
-  flex: 8;
-  flex: 100%;
-}
 .gap-5 {
   gap: var(--spacing-06);
 }
