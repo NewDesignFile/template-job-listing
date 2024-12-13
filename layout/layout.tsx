@@ -2,26 +2,26 @@ import React, { FC, useRef, useEffect } from 'react'
 import Head from 'next/head'
 import Header from './header'
 
-interface layoutInterface {
-  children: any
+interface LayoutInterface {
+  children: React.ReactNode
 }
 
-const Layout: FC<layoutInterface> = ({ children }) => {
-  const stickyHeader = useRef()
+const Layout: FC<LayoutInterface> = ({ children }) => {
+  const stickyHeader = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    const mainHeader = document.getElementById('site-header')
-    const pageCTA = document.getElementById("page-cta")
+    const mainHeader = document.getElementById('site-header');
+    const pageCTA = document.getElementById("page-cta");
+    let pageCTAPosition = 0;
+    let previousScrollPosition = 0;
 
-    let pageCTAPosition = 0
-    let previousScrollPosition = 0
     if (pageCTA) {
       pageCTAPosition = pageCTA.getBoundingClientRect().bottom;
     }
 
     const handleNavScroll = () => {
       let currentScrolledPosition = window.scrollY || window.pageYOffset;
-
+      
       if (isScrollingDown()) {
         mainHeader?.classList.add("scroll-down");
         mainHeader?.classList.remove("scroll-up");
@@ -39,25 +39,21 @@ const Layout: FC<layoutInterface> = ({ children }) => {
           mainHeader?.classList.remove("fixed");
         }
       }
-    }
+    };
 
     const isScrollingDown = () => {
       let currentScrolledPosition = window.scrollY || window.pageYOffset;
-      let scrollingDown;
-    
-      if (currentScrolledPosition > previousScrollPosition) {
-        scrollingDown = true;
-      } else {
-        scrollingDown = false;
-      }
+      let scrollingDown = currentScrolledPosition > previousScrollPosition;
       previousScrollPosition = currentScrolledPosition;
       return scrollingDown;
-    }
-    
-    window.addEventListener('scroll', handleNavScroll)
-  }, [])
+    };
 
-  
+    window.addEventListener('scroll', handleNavScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleNavScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -69,8 +65,6 @@ const Layout: FC<layoutInterface> = ({ children }) => {
         <meta property="og:title" content="Remote Jobs" />
         <meta property="og:url" content="https://new-ui.com/templates/job-listing" />
         <meta property="og:type" content="website" />
-
-
         <meta property="og:image" content="" />
         <meta property="og:description" content="Find your next work from home job." />
         <meta property="og:site_name" content="Remote Jobs" />
@@ -82,12 +76,10 @@ const Layout: FC<layoutInterface> = ({ children }) => {
         <meta name="twitter:image" content="" />
         <link rel="icon" href="/assets/images/logo.svg" />
       </Head>
-      
       <Header />
       {children}
-      
     </>
-  )
+  );
 }
 
 export default Layout;
