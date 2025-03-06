@@ -3,5 +3,3 @@
 
 Launch your job listing site in minutes. [Getting started guide](https://new-ui.com/docs/templates/job-listing).
 
-
-Note: Code will be prettified and optimized soon.
