@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.10",
-    "@new-ui/foundations": "^0.2.2",
+    "@new-ui/foundations": "^0.2.3",
     "@types/node": "^22.13.10",
     "sass": "^1.85.1",
     "vercel": "^41.4.0"

@@ -48,6 +48,10 @@ body {
 .seperator-line {
   display: inline-block; 
   margin-inline: 0;
+
+  img {
+    max-width: fit-content;
+  }
 }
 
 @keyframes slideDown {
@@ -193,6 +197,7 @@ body {
       height: 32px;
       border-radius: 7.5px;
       padding: 0;
+      box-shadow: none;
 
       img {
         width: 32px !important;
