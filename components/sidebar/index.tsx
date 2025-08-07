@@ -53,7 +53,7 @@ const Sidebar = () => {
           <nav className="text--secondary-alt nu-u-mb-8 sidebar-links">
             <a target="_blank"href="https://new-ui.com/templates/job-listing">Download</a>
             <span>&nbsp;·&nbsp;</span>
-            <a target="_blank" href="https://new-ui.com/docs/templates/job-listing">What's inside?</a>
+            <a target="_blank" href="https://new-ui.com/docs/templates/job-listing">What&apos;s inside?</a>
           </nav>
           <div className="text--secondary-alt nu-u-mb-8 sidebar__footer">
             <p>Job Listing Template.</p>

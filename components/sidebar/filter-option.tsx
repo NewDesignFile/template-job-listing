@@ -7,14 +7,14 @@ interface filterOptionInterface {
 }
 
 const Item: FC<filterOptionInterface> = ({name, label}) => {
-  const countContext = useContext(FilterContext);
+  const { filterDispatch } = useContext(FilterContext);
 
-  const handleChange = (event: any) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     
     if(event.target.checked) {
-      countContext.filterDispatch({filter: event.target.value, type: 'add'});
+      filterDispatch({filter: event.target.value, type: 'add'});
     } else {
-      countContext.filterDispatch({filter: event.target.value, type: 'remove'});
+      filterDispatch({filter: event.target.value, type: 'remove'});
     }
   }
 

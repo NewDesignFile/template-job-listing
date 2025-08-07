@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "export": "next export",
     "start": "next start",
@@ -11,20 +11,21 @@
     "preview": "next build && next start"
   },
   "dependencies": {
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4",
-    "eslint": "^9.22.0",
-    "eslint-config-next": "15.2.2",
-    "next": "^15.2.2",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "typescript": "5.8.2"
+    "@types/react": "19.1.9",
+    "@types/react-dom": "19.1.7",
+    "eslint": "^9.32.0",
+    "eslint-config-next": "15.4.6",
+    "next": "^15.4.6",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "typescript": "5.9.2"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.10",
-    "@new-ui/foundations": "^0.2.3",
-    "@types/node": "^22.13.10",
-    "sass": "^1.85.1",
-    "vercel": "^41.4.0"
+    "@cloudflare/next-on-pages": "^1.13.13",
+    "@new-ui/foundations": "^0.2.5",
+    "@types/node": "^24.2.0",
+    "sass": "^1.90.0",
+    "sass-embedded": "^1.90.0",
+    "vercel": "^44.7.3"
   }
 }
