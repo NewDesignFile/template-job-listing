@@ -5,17 +5,12 @@ import Image from 'next/image'
 import React, { createContext, useReducer, useEffect, useState } from 'react'
 import Jobs from "./../jobs.json"
 
-type initialCriteriaType = {
-  filterState: []
-  filterDispatch: React.Dispatch<React.SetStateAction<{filter: string, type: string} | null>>
-}
-
-export const FilterContext = createContext<initialCriteriaType | any>({
+export const FilterContext = createContext<{
+  filterState: string[];
+  filterDispatch: React.Dispatch<{filter: string, type: string}>;
+}>({
   filterState: [],
-  filterDispatch: {
-    filter: '',
-    type: ''
-  }
+  filterDispatch: () => null
 });
 
 const reducer = (state: string[], action: {
@@ -26,7 +21,7 @@ const reducer = (state: string[], action: {
     case 'add':
       return [...state, action.filter];
     case 'remove':
-      let index = state.indexOf(action.filter);
+      const index = state.indexOf(action.filter);
       state.splice(index, 1);
       return [...state];
     default:
@@ -34,19 +29,27 @@ const reducer = (state: string[], action: {
   }
 }
 
+interface Job {
+  icon: string;
+  company: string;
+  position: string;
+  time: string;
+  tags: string[];
+  link: string;
+  category: string;
+}
+
 const Home = () => {
   const [filter, dispatch] = useReducer(reducer, []);
-  const [JobsFilterApplied, setJobsFilterApplied] = useState([]);
+  const [JobsFilterApplied, setJobsFilterApplied] = useState<Job[]>([]);
   
   useEffect(() => {
-    let subscription = true;
-    let allJobs = JSON.parse(JSON.stringify(Jobs));
-    const jobs = filter.length ? allJobs.filter(job => filter.includes(job.category)) : allJobs;
+    const allJobs: Job[] = JSON.parse(JSON.stringify(Jobs));
+    const jobs = filter.length ? allJobs.filter((job: Job) => filter.includes(job.category)) : allJobs;
     setJobsFilterApplied(jobs);
-    return () => { subscription = false; }
   }, [filter]);
 
-  const jobItem = JobsFilterApplied.map((job, index) => {
+  const jobItem = JobsFilterApplied.map((job: Job, index) => {
     const { icon, company, position, time, tags, link } = job;
     return <div className="job-listings-item" key={index}>
       <div className="job-listings-item__icon">
@@ -62,7 +65,7 @@ const Home = () => {
         <p className="job-listings-item__timeago">{company}{time}</p>
         <ul className="job-listings-tags__list">
           {
-            [...tags].map((tag, index) => {
+            [...tags].map((tag: string, index) => {
               return <li key={index}>
                 <span className="btn tags-btn">{tag}</span>
               </li>

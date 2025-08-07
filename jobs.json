@@ -5,7 +5,7 @@
     "position": "Data Engineer",
     "icon": "/assets/images/companies/supabase.svg",
     "tags": ["DBT models", "Pulumi"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "engineering",
@@ -13,7 +13,7 @@
     "position": "Senior Data Engineer",
     "icon": "/assets/images/companies/shyft.svg",
     "tags": ["Full-time", "Python"],
-    "link": "mailto:gayatri@shyftlabs.io"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "engineering",
@@ -21,7 +21,7 @@
     "position": "Site Reliability Engineer",
     "icon": "/assets/images/companies/sticker.svg",
     "tags": ["Docker", "Kubernetes"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "design",
@@ -29,7 +29,7 @@
     "position": "Product Designer",
     "icon": "/assets/images/companies/shiftcare.svg",
     "tags": ["Contract", "Mid Level"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "design",
@@ -37,7 +37,7 @@
     "position": "Founding Product Designer",
     "icon": "/assets/images/companies/oliv.svg",
     "tags": ["Full-time", "Intermediate"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "engineering",
@@ -45,7 +45,7 @@
     "position": "Engineering Manager, Salesforce",
     "icon": "/assets/images/companies/deliveroo.svg",
     "tags": ["Manager", "Senior"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "operations",
@@ -53,7 +53,7 @@
     "position": "Junior Operations Associate",
     "icon": "/assets/images/companies/fp.svg",
     "tags": ["SaaS", "Operations"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },  
   {
     "category": "hr-and-recruiting",
@@ -61,7 +61,7 @@
     "position": "Sr. Technical Recruiter",
     "icon": "/assets/images/companies/apollo.svg",
     "tags": ["Manager", "Senior"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "devops-and-sysadmin",
@@ -69,7 +69,7 @@
     "position": "Backend Test Engineer",
     "icon": "/assets/images/companies/ancient-gaming.svg",
     "tags": ["Node.js", "JavaScript"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "writing",
@@ -77,7 +77,7 @@
     "position": "Senior UX Writer",
     "icon": "/assets/images/companies/duck-duck-go.svg",
     "tags": ["UX writing", "Copywriting"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "sales-and-partnerships",
@@ -85,7 +85,7 @@
     "position": "Sales Development Representative",
     "icon": "/assets/images/companies/builder-io.svg",
     "tags": ["Inbound", "Sales"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "design",
@@ -93,7 +93,7 @@
     "position": "Senior Content Designer",
     "icon": "/assets/images/companies/10up.svg",
     "tags": ["UX content", "Research"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "sales-and-partnerships",
@@ -101,7 +101,7 @@
     "position": "Commercial Account Executive",
     "icon": "/assets/images/companies/assemblyai.svg",
     "tags": ["Sales", "Outbound"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "engineering",
@@ -109,7 +109,7 @@
     "position": "Senior Web Engineer",
     "icon": "/assets/images/companies/10up.svg",
     "tags": ["WordPress", "React.js"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "devops-and-sysadmin",
@@ -117,7 +117,7 @@
     "position": "Microservices Engineer",
     "icon": "/assets/images/companies/canonical.svg",
     "tags": ["Architecture", "APIs"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "product",
@@ -125,7 +125,7 @@
     "position": "Senior Project Manager",
     "icon": "/assets/images/companies/jenzabar.svg",
     "tags": ["Planning", "Manager"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "engineering",
@@ -133,7 +133,7 @@
     "position": "Director of Engineering",
     "icon": "/assets/images/companies/wikimedia.svg",
     "tags": ["Developer Experience"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "engineering",
@@ -141,7 +141,7 @@
     "position": "Software Engineer",
     "icon": "/assets/images/companies/check.svg",
     "tags": ["Payments"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "sales-and-partnerships",
@@ -149,7 +149,7 @@
     "position": "Senior Business Systems Analyst",
     "icon": "/assets/images/companies/redcanary.svg",
     "tags": ["Revenue", "Operations"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   },
   {
     "category": "product",
@@ -157,6 +157,6 @@
     "position": "Group Product Manager",
     "icon": "/assets/images/companies/wikimedia.svg",
     "tags": ["Product direction", "Manager"],
-    "link": "https://new-ui.com/templates/job-listing"
+    "link": "https://new-ui.com/templates/"
   }
 ]

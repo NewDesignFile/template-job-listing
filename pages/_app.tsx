@@ -1,9 +1,5 @@
-import "@new-ui/colors";
-import "@new-ui/typography";
-import "@new-ui/spacings";
-import "@new-ui/effects";
 import './../_sass/_reset.scss'
-import '@/styles/globals.css'
+import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import './../_sass/_utilities.scss'
 import './../_sass/_base.scss'
@@ -20,7 +16,7 @@ return (
           src="https://www.googletagmanager.com/gtag/js?id=G-HS4RZ4M57Q"
           strategy="afterInteractive"
         />
-        <Script>
+        <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){window.dataLayer.push(arguments);}
