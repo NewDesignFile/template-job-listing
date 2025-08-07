@@ -42,6 +42,9 @@ importers:
       '@types/node':
         specifier: ^24.2.0
         version: 24.2.0
+      sass:
+        specifier: ^1.90.0
+        version: 1.90.0
       sass-embedded:
         specifier: ^1.90.0
         version: 1.90.0
@@ -4560,7 +4563,6 @@ snapshots:
   chokidar@4.0.3:
     dependencies:
       readdirp: 4.1.2
-    optional: true
 
   chownr@2.0.0: {}
 
@@ -6151,7 +6153,6 @@ snapshots:
       source-map-js: 1.2.1
     optionalDependencies:
       '@parcel/watcher': 2.5.1
-    optional: true
 
   scheduler@0.26.0: {}
 
