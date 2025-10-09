@@ -46,8 +46,8 @@ body {
 }
 
 .seperator-line {
-  display: inline-block; 
   margin-inline: 0;
+  overflow: hidden;
 
   img {
     max-width: fit-content;

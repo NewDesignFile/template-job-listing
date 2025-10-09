@@ -57,7 +57,7 @@ const Sidebar = () => {
           </nav>
           <div className="text--secondary-alt nu-u-mb-8 sidebar__footer">
             <p>Job Listing Template.</p>
-            <p>&#169; 2024 Method Black.</p>
+            <p>&#169; 2025 Method Black Studio.</p>
           </div>
         </div>
       </div>
