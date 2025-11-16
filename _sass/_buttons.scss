@@ -3,81 +3,95 @@
   --accent-primary-hover: var(--blue6);
   --accent-primary-active: var(--blue7);
   --accent-primary-focus: var(--blue5);
-  --accent-primary-focus--border: var(--blue8);
+  --accent-primary-focus-border: var(--blue8);
   --accent-primary-disabled: var(--grey4);
- }
- 
+}
+
 .btn-group {
   display: flex;
   gap: var(--spacing-03);
 }
- 
+
 .btn {
   padding: 0.5625rem 0.9375rem;
   border: 1px solid transparent;
+  border-radius: 5px;
   outline: none;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+  background: none;
+  
   font-size: 0.875rem;
   line-height: 1rem;
-  border-radius: 5px;
- 
-  &.btn--sm {
-    padding: 4px 16px;
-  }
+  color: inherit;
+  text-decoration: none;
+  
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
 
-  &.btn--lg {
-    padding: 12px 32px;
-  }
- 
-  &.btn--accent-primary {
-    color: var(--white);
-    background-color: var(--blue5);
+/* Size variants */
+.btn--sm {
+  padding: 0.25rem 1rem;
+}
 
-    &:hover {
-      background-color: var(--blue6);
-    }
+.btn--lg {
+  padding: 0.75rem 2rem;
+}
 
-    &:active {
-      background-color: var(--blue7);
-      box-shadow: none;
-    }
+/* Primary accent button */
+.btn--accent-primary {
+  color: var(--white);
+  background-color: var(--accent-primary);
+}
 
-    &:disabled {
-      background-color: var(--grey4);
-    }
+.btn--accent-primary:hover:not(:disabled) {
+  background-color: var(--accent-primary-hover);
+}
 
-    &:focus {
-      background-color: var(--blue5);
-      outline: 1px solid var(--blue8);
-    }
-  }
- 
-  &.btn--secondary {
-    color: var(--text-primary);
-    border-color: var(--border);
-    color: var(--text-primary);
-    border: 1px solid var(--border-muted);
-    background-color: var(--background);
+.btn--accent-primary:active:not(:disabled) {
+  background-color: var(--accent-primary-active);
+}
 
-    &:hover {
-      background-color: var(--background);
-      color: var(--link);
-    }
+.btn--accent-primary:focus-visible {
+  background-color: var(--accent-primary-focus);
+  outline: 1px solid var(--accent-primary-focus-border);
+  outline-offset: 1px;
+}
 
-    &:active {
-      box-shadow: none;
-      color: var(--link-visited);
-    }
+.btn--accent-primary:disabled {
+  background-color: var(--accent-primary-disabled);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
 
-    &:focus {
-      outline: 1px solid var(--border-focus);
-    }
-  }
- 
-  @media screen and (max-width: 730px) {
-    padding: .375rem .6875rem;
+/* Secondary button */
+.btn--secondary {
+  color: var(--content-primary);
+  background-color: var(--background);
+  border: 0.5px solid var(--border-muted);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  color: var(--link);
+}
+
+.btn--secondary:active:not(:disabled) {
+  color: var(--link-visited);
+}
+
+.btn--secondary:focus-visible {
+  outline: 1px solid var(--border-focus);
+  outline-offset: 1px;
+}
+
+.btn--secondary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 730px) {
+  .btn {
+    padding: 0.375rem 0.6875rem;
     min-height: 1.75rem;
   }
- }
+}

@@ -56,8 +56,7 @@ const Sidebar = () => {
             <a target="_blank" href="https://new-ui.com/docs/templates/job-listing">What&apos;s inside?</a>
           </nav>
           <div className="text--secondary-alt nu-u-mb-8 sidebar__footer">
-            <p>Job Listing Template.</p>
-            <p>&#169; 2025 Method Black Studio.</p>
+            <p>&#169; 2025 Method Black</p>
           </div>
         </div>
       </div>
