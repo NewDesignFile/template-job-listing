@@ -1,9 +1,4 @@
-@use "sass:math";
-
-@function pxToRem($pxValue) {
-  @return math.div($pxValue, 16px) * 1rem;
-}
-
+/* Display utilities */
 .hidden {
   display: none;
 }
@@ -11,34 +6,54 @@
 .block {
   display: block;
 }
+
 .inline-block {
   display: inline-block;
   vertical-align: middle;
 }
+
 .inline {
   display: inline;
 }
 
-.spacer-17 {
+/* Spacer utilities */
+.spacer-17,
+.spacer-15,
+.spacer-13,
+.spacer-12,
+.spacer-11,
+.spacer-8 {
   display: block;
+}
+
+.spacer-17 {
   height: var(--spacing-17);
 }
 
-.spacer-13 {
-  display: block;
-  height: var(--spacing-13);
-}
 .spacer-15 {
-  display: block;
   height: var(--spacing-15);
 }
+
+.spacer-13 {
+  height: var(--spacing-13);
+}
+
+.spacer-12 {
+  height: var(--spacing-12);
+}
+
 .spacer-11 {
-  display: block;
   height: var(--spacing-11);
 }
 
-.mobile-hidden {
-  @media screen and (max-width: 600px) {
+.spacer-8 {
+  height: var(--spacing-08);
+}
+
+/* Responsive utilities */
+@media screen and (max-width: 600px) {
+  .mobile-hidden {
     display: none;
   }
 }
+

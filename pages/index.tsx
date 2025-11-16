@@ -84,17 +84,17 @@ const Home = () => {
 
   return <FilterContext.Provider value={{ filterState: filter, filterDispatch: dispatch }}>
     <Layout>
-      <div className="nu-c-spacer-13"></div>
+      <div className="spacer-13"></div>
       <section className="landing-page-intro">
         <div className="container">
-          <div className="nu-c-spacer-8"></div>
+          <div className="spacer-8"></div>
           <h1 className="h1 nu-u-mx-auto text-center serif">
-            Find you next <br /> work from home job
+            Find you next <br />work from home job
           </h1>
 
-          <div className="nu-c-spacer-12"></div>
+          <div className="spacer-12"></div>
           <Seperator />
-          <div className="nu-c-spacer-12"></div>
+          <div className="spacer-12"></div>
           <section className="main">
             
             <Sidebar />
