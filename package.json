@@ -11,21 +11,20 @@
     "preview": "next build && next start"
   },
   "dependencies": {
-    "@types/react": "19.2.5",
+    "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "eslint": "^9.39.1",
-    "eslint-config-next": "16.0.3",
-    "next": "15.5.2",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "16.1.0",
+    "next": "16.1.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "typescript": "5.9.3"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.16",
     "@new-ui/foundations": "^0.3.2",
-    "@types/node": "^24.10.1",
-    "sass": "^1.94.0",
-    "sass-embedded": "^1.93.3",
-    "vercel": "^47.0.4"
+    "@types/node": "^25.0.3",
+    "sass": "^1.97.1",
+    "sass-embedded": "^1.97.1",
+    "vercel": "^50.1.3"
   }
 }
